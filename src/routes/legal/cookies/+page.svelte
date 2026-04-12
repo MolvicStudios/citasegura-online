@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Política de Cookies - CitaSegura.es</title>
+  <title>Política de Cookies - CitaSegura.online</title>
 </svelte:head>
 
 <article class="legal">
@@ -17,21 +17,43 @@
   <section>
     <h2>¿Qué cookies utiliza este sitio?</h2>
     <p>
-      <strong>CitaSegura.es</strong> es un sitio web estático que actualmente <strong>no utiliza cookies</strong>
-      propias ni de terceros. No empleamos herramientas de analítica, publicidad ni seguimiento.
+      <strong>CitaSegura.online</strong> utiliza cookies de publicidad de terceros a través de
+      <strong>Adsterra</strong> para financiar el mantenimiento de este servicio gratuito.
+      Estas cookies solo se activan si el usuario acepta expresamente su uso a través del banner
+      de consentimiento que aparece al acceder al sitio.
     </p>
     <p>
-      En caso de que en el futuro se implementasen cookies, esta política se actualizará y se
-      solicitará el consentimiento del usuario conforme a la normativa vigente.
+      Las cookies de Adsterra pueden incluir cookies de seguimiento publicitario y perfilado de
+      interés. Los dominios desde los que se sirven los anuncios pueden variar (red rotativa).
     </p>
+    <table class="cookie-tabla">
+      <thead>
+        <tr><th>Proveedor</th><th>Finalidad</th><th>Tipo</th><th>Duración</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Adsterra</td>
+          <td>Publicidad y monetización</td>
+          <td>Terceros</td>
+          <td>Sesión / hasta 1 año</td>
+        </tr>
+        <tr>
+          <td>CitaSegura.online</td>
+          <td>Guardar preferencia de consentimiento de cookies</td>
+          <td>Propia (localStorage)</td>
+          <td>Persistente</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
   <section>
-    <h2>Cookies de terceros</h2>
+    <h2>Consentimiento y retirada</h2>
     <p>
-      Al hacer clic en los enlaces externos que redirigen a las plataformas de citas listadas,
-      dichas plataformas pueden instalar sus propias cookies. Recomendamos consultar las políticas
-      de cookies de cada sitio externo.
+      Al entrar en el sitio se muestra un banner de cookies. Si acepta, las cookies publicitarias
+      se cargarán durante la sesión. Su decisión queda guardada en <code>localStorage</code>
+      bajo la clave <code>cookie-consent</code>. Para retirar el consentimiento, borre los datos
+      del sitio en su navegador o contacte con nosotros.
     </p>
   </section>
 
@@ -111,5 +133,32 @@
 
   .volver:hover {
     text-decoration: underline;
+  }
+
+  .cookie-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .cookie-tabla th,
+  .cookie-tabla td {
+    border: 1px solid #e2e8f0;
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    color: #334155;
+  }
+
+  .cookie-tabla th {
+    background: #f1f5f9;
+    font-weight: 600;
+  }
+
+  code {
+    background: #f1f5f9;
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+    font-size: 0.85em;
   }
 </style>

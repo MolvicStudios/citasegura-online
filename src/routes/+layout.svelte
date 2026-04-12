@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
+  import CookieBanner from '$lib/components/CookieBanner.svelte';
 
   interface Props {
     children: Snippet;
@@ -9,7 +10,7 @@
 </script>
 
 <svelte:head>
-  <title>CitaSegura.es — Compara sitios de citas en España</title>
+  <title>CitaSegura.online — Compara sitios de citas en España</title>
   <meta name="description" content="Compara los mejores sitios de citas en España por índice de confiabilidad, puntuaciones Trustpilot, app rating y características de seguridad." />
 </svelte:head>
 
@@ -20,7 +21,7 @@
         <a href="/" class="logo">
           <div class="logo-shield">🛡️</div>
           <div class="logo-text">
-            <span class="logo-nombre">CitaSegura<span class="logo-punto">.es</span></span>
+            <span class="logo-nombre">CitaSegura<span class="logo-punto">.online</span></span>
             <span class="logo-tagline">Comparador independiente de plataformas de citas</span>
           </div>
         </a>
@@ -46,7 +47,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <span class="footer-logo">🛡️ CitaSegura.es</span>
+        <span class="footer-logo">🛡️ CitaSegura.online</span>
         <p>Proyecto informativo independiente. No afiliado a ninguna plataforma listada.</p>
       </div>
       <nav class="footer-links" aria-label="Páginas legales">
@@ -54,10 +55,12 @@
         <a href="/legal/privacidad">Política de privacidad</a>
         <a href="/legal/cookies">Política de cookies</a>
       </nav>
-      <p class="footer-copy">© {new Date().getFullYear()} CitaSegura.es — Datos orientativos. Las puntuaciones pueden variar.</p>
+      <p class="footer-copy">© {new Date().getFullYear()} CitaSegura.online — Datos orientativos. Las puntuaciones pueden variar.</p>
     </div>
   </footer>
 </div>
+
+<CookieBanner />
 
 <style>
   :global(*) {

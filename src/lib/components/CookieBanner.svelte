@@ -4,49 +4,7 @@
 
   let visible = $state(false);
 
-  function loadAdScripts() {
-    if (!browser) return;
-
-    // Anuncio 1: banner display con contenedor
-    if (!document.getElementById('container-cd1e4bfa27e5aa20157767c2d0ef588e')) {
-      const container = document.createElement('div');
-      container.id = 'container-cd1e4bfa27e5aa20157767c2d0ef588e';
-      document.body.appendChild(container);
-    }
-    const s1 = document.createElement('script');
-    s1.async = true;
-    s1.setAttribute('data-cfasync', 'false');
-    s1.src =
-      'https://pl29135595.profitablecpmratenetwork.com/cd1e4bfa27e5aa20157767c2d0ef588e/invoke.js';
-    document.body.appendChild(s1);
-
-    // Anuncio 2
-    const s2 = document.createElement('script');
-    s2.src =
-      'https://pl29135596.profitablecpmratenetwork.com/1c/10/91/1c10918304df269dc23520afe4313142.js';
-    document.body.appendChild(s2);
-
-    // Anuncio 3
-    const s3 = document.createElement('script');
-    s3.src =
-      'https://pl29135597.profitablecpmratenetwork.com/d3/3d/fb/d33dfb815097c03e75ac28890c6496be.js';
-    document.body.appendChild(s3);
-  }
-
-  onMount(() => {
-    const consent = localStorage.getItem('cookie-consent');
-    if (consent === 'accepted') {
-      loadAdScripts();
-    } else if (consent === null) {
-      visible = true;
-    }
-  });
-
-  function accept() {
-    localStorage.setItem('cookie-consent', 'accepted');
-    visible = false;
-    loadAdScripts();
-  }
+  function loadAdScripts() {}
 
   function reject() {
     localStorage.setItem('cookie-consent', 'rejected');
